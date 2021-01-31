@@ -25,20 +25,18 @@ public class CustomerController {
 	// @RequestMapping(path = "/", method = RequestMethod.GET)
 	public String renderListPage(Model model) {
 		Customer c = new Customer();
-		c.setName("volkan");
+		// c.setName("volkan");
 		model.addAttribute("customer", c);
 		model.addAttribute("customers", customers);
 		return "customer";
 	}
 
 	@PostMapping("/add")
-	/*
 	public String handleAdd(@ModelAttribute @Validated Customer customer, BindingResult bindingResult) {
 		if (bindingResult.hasErrors()) {
 			throw new RuntimeException(bindingResult.getObjectName());
 		}
-		*/		
-	public String handleAdd(@ModelAttribute Customer customer) {
+	//public String handleAdd(@ModelAttribute Customer customer) {
 		System.out.println(customer);
 		customers.add(customer);
 		// Redirect vs Forward
