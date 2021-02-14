@@ -1,4 +1,4 @@
-package net.javaci.thymleafExamples.otherTags;
+package net.javaci.thymleafExamples._08_otherTags;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
