@@ -8,14 +8,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/fragment")
 public class FragmentController {
 	
-	@GetMapping("/include")
+	@GetMapping("/index")
 	public String renderIncludePage() {
 		// include include ettigi tag in içeriğini alır tag i almaz
 
 		// insert tagla birlikte alır
 
 		// replace kendini siler
-		return "fragment/include";
+		return "fragment/index";
 	}
 
 }
